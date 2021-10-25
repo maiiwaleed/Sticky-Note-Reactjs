@@ -1,0 +1,19 @@
+//  alternate routing
+ 
+ 
+ 
+ {/* <Route path='/home'> <Home loginUser={loginUser}/> </Route> */}
+ <ProtectedRoute path='/home' component={Home} loginUser={loginUser}/>
+
+ <ProtectedRoute path='/movies' component={Movies}/>
+ <ProtectedRoute path='/tv' component={Tv}/>
+ {/* <Route path='/movies'> <Movies /> </Route>
+ <Route path='/tv'> <Tv /> </Route> */}
+
+ <Route path='/register'  render={ (props)=> <Register {...props}/>  } />
+ <Route path='/login'  render={ (props)=> <Login {...props} getUserInfo={getUserInfo}/>  } />
+
+ {/* <Redirect from='' exact to='/home'/> */}
+ 
+ <ProtectedRoute path='*' component={Login}/>
+ {/* <Route path='*'> <Home /> </Route> */}

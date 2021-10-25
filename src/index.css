@@ -1,0 +1,100 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
+
+* {
+  box-sizing: border-box;
+  font-family: 'Montserrat', sans-serif;
+  /* background-color: #666666; */
+
+  color: white;
+}
+
+#root{
+  background-color: #666666;
+}
+
+html {
+  font-family: 'Montserrat', sans-serif;
+  background-color: #666666;
+  color: white;
+}
+
+body {
+  margin: 0;
+}
+
+nav{
+  z-index: 10;
+  position: relative;
+}
+
+.register{
+  z-index: 10;
+  position: relative;
+}
+
+.login{
+  z-index: 10;
+  position: relative;
+}
+
+img{
+  cursor: pointer;
+}
+
+main {
+  margin-top: 6rem;
+}
+
+a{
+  color: white;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.activeLink{
+  background-color: #fff;
+  border-radius: 2px;
+  padding: 1rem;
+  color: black;
+  /* margin-left: 0.5rem;
+  margin-right: 0.5rem ; */
+}
+
+
+.note{
+  width: 15rem;
+  height: 15rem;
+}
+
+.fa-ellipsis-v{
+  top:0.3rem;
+  right: 0.3rem;
+  cursor: pointer;
+}
+
+.optionsMenu{
+  left: 100%;
+  top:20%;
+  z-index: 2;
+}
+
+.optionsMenu li{
+  transition: background-color 0.5s ;
+}
+
+.optionsMenu li:hover{
+  background-color: #c2c2c2;
+  cursor: pointer;
+}
+
+#tsparticles {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  padding: 0;
+  margin: 0;
+  z-index: 0; /* if you use -1 you have to set to `"window"` the interactivity.detectsOn property */
+}
